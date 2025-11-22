@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Week9Act.sln"
+    "dotnet.defaultSolution": "Week10Act.sln"
 }

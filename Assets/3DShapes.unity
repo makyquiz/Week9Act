@@ -131,11 +131,7 @@ GameObject:
   - component: {fileID: 1960435526}
   - component: {fileID: 1960435525}
   - component: {fileID: 1960435524}
-  - component: {fileID: 1960435532}
-  - component: {fileID: 1960435531}
-  - component: {fileID: 1960435530}
-  - component: {fileID: 1960435529}
-  - component: {fileID: 1960435533}
+  - component: {fileID: 1960435534}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -230,7 +226,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1960435529
+--- !u!114 &1960435534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,85 +235,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1960435523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9f5167cfa049d48bd0910628419f0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9157aaed273a1f04d99fbae85f2aa074, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GLSphere
+  m_EditorClassIdentifier: Assembly-CSharp::GLShapes
   material: {fileID: 2100000, guid: bf1bd287f3cadf94a9b8a49b5bd8b100, type: 2}
-  radius: 1
-  segments: 12
-  pos: {x: -7, y: 0}
-  zPos: 0
---- !u!114 &1960435530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960435523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a081d8e72f13134dbb05da2fcb3ec92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GLCylinder
-  material: {fileID: 2100000, guid: bf1bd287f3cadf94a9b8a49b5bd8b100, type: 2}
-  radius: 1
-  height: 2
-  segments: 20
-  pos: {x: -3.5, y: 0}
-  zPos: 0
---- !u!114 &1960435531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960435523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa3e29dc7e335f148bd776ee76774b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GLPyramid
-  material: {fileID: 2100000, guid: bf1bd287f3cadf94a9b8a49b5bd8b100, type: 2}
-  baseSize: 2
-  height: 1.5
-  basePos: {x: 3.5, y: -0.9}
-  zPos: 0
---- !u!114 &1960435532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960435523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c3a03cf6ca7a1b46ae88c27e9e0009a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GLRectangularColumn
-  material: {fileID: 2100000, guid: bf1bd287f3cadf94a9b8a49b5bd8b100, type: 2}
-  width: 1
-  height: 2
-  depth: 1
-  pos: {x: 7, y: 0}
-  zPos: 0
---- !u!114 &1960435533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960435523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45068979dff69d4ba25c6f33a62bccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GLCapsule
-  material: {fileID: 2100000, guid: bf1bd287f3cadf94a9b8a49b5bd8b100, type: 2}
-  radius: 1
-  height: 1
-  segments: 12
-  pos: {x: 0, y: 0}
-  zPos: 0
+  sphereRot: {x: 0, y: 0, z: 0}
+  cylinderRot: {x: 0, y: 0, z: 0}
+  capsuleRot: {x: 0, y: 0, z: 0}
+  pyramidRot: {x: 0, y: 0, z: 0}
+  columnRot: {x: 0, y: 0, z: 0}
+  sphereRadius: 1
+  sphereSegments: 12
+  spherePos: {x: -6.98, y: 0}
+  cylinderRadius: 1
+  cylinderHeight: 2.28
+  cylinderSegments: 20
+  cylinderPos: {x: -3.52, y: 0}
+  cylinderZPos: 0
+  capsuleRadius: 1
+  capsuleHeight: 1.11
+  capsuleSegments: 20
+  capsulePos: {x: -0.04, y: 0}
+  capsuleZPos: 0
+  pyramidBase: 2.39
+  pyramidHeight: 1.75
+  pyramidBasePos: {x: 3.47, y: -1.01}
+  pyramidZPos: 0
+  columnWidth: 1.68
+  columnHeight: 1.56
+  columnDepth: 1
+  columnPos: {x: 6.64, y: -0.25}
+  columnZPos: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
